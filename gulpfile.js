@@ -1,5 +1,17 @@
 'use strict';
 
+/* параметры для gulp-autoprefixer */
+var autoprefixerList = [
+  'Chrome >= 45',
+  'Firefox ESR',
+  'Edge >= 12',
+  'Explorer >= 10',
+  'iOS >= 9',
+  'Safari >= 9',
+  'Android >= 4.4',
+  'Opera >= 30'
+];
+
 // init
 var gulp        = require('gulp'),
     watch       = require('gulp-watch'),        // Наблюдение за изменениями файлов
@@ -161,7 +173,9 @@ gulp.task('styles:build', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())            // То же самое что и с js
         .pipe(sass())                       // Скомпилируем
-        .pipe(prefixer())                   // Добавим вендорные префиксы
+        .pipe(prefixer({
+			browsers: autoprefixerList
+		}))                   // Добавим вендорные префиксы
         .pipe(cssmin())                     // Сожмем
         .pipe(sourcemaps.write())           // Пропишем карты
         .pipe(plumber.stop())
