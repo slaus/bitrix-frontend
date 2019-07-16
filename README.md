@@ -26,7 +26,7 @@ Install
 ### change directory to your dev folder
  
 ```bash
-$ cd /path/to/your/dev/folder
+$ cd path_to_your_dev_folder
 ```
 
 ### clone repository
@@ -41,14 +41,14 @@ You may also clone this using https:
 $ git clone https://github.com/slaus/bitrix-frontend.git
 ```
 
-# switch directory to the mobile-app-www
+# switch directory to the bitrix-frontend folder
 ```bash
 $ cd bitrix-frontend/
 ```
 
 ### switch branch to develop
 ```bash
-$ git checkout name_developer
+$ git checkout your_name_as_developer
 ```
 
 ### install npm libraries
@@ -66,7 +66,7 @@ $ bower install
 ### build and start
 
 ```bash
-$ gulp
+$ gulp default
 ```
 
 This will start local server on http://localhost:3000/ with file watcher and all required tools to handle *.scss changes/build
