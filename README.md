@@ -22,13 +22,31 @@ Prerequisites
 
 Install
 -------
-### open terminal (for Windows users gitBash)
-### change directory to your dev folder
- 
+1. Install nodejs. https://nodejs.org/en/
+2. Check npm (node package manager) is installed via command prompt:
 ```bash
-$ cd path_to_your_dev_folder
+$ npm
 ```
+3. Global install gulp on computer:
+```bash
+$ npm install gulp --global
+```
+4. Copying 'gulpfile.js' and 'package.json' into folder with project
+5. Initialize project:
+```bash
+$ npm init
+```
+6. Installing Gulp locally into project folder:
+```bash
+$ npm install gulp --save-dev
+```
+## If we have Error: gulp.hasTask is not a function
 
+For anyone that's wondering, I found that there was a breaking change that was introduced in Gulp version 4.0. To fix this, I did the following:
+
+```bash
+$ npm install --save-dev gulp@3.9.1
+```
 ### clone repository
 
 ```bash
@@ -63,10 +81,11 @@ $ npm install
 $ bower install
 ```
 
-### build and start
+### Run Gulp:
 
 ```bash
 $ gulp default
 ```
 
 This will start local server on http://localhost:3000/ with file watcher and all required tools to handle *.scss changes/build
+
