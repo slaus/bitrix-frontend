@@ -1,0 +1,44 @@
+// set path for icons
+$icon-font-path: "fonts/bootstrap/";
+// include bootstrap sass
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+// include fonts
+@import "partials/fonts";
+// include sprite
+@import "partials/sprite";
+// include sprite-svg
+@import "partials/sprite-svg";
+// include variables
+@import "partials/variables";
+// include functions
+@import "partials/functions";
+// include mixin
+@import "partials/mixin";
+
+
+body {
+	font-family: font(verdana);
+	color: color(egg);
+	font-size: $baseFontSize;
+	line-height: $baseLineHeight;
+}
+
+/* custom styles
+-----------------------------*/
+
+.logo {
+	@include sprite($s-krayt);
+}
+
+/* header styles
+-----------------------------*/
+
+
+/* content styles
+-----------------------------*/
+
+
+/* footer styles
+-----------------------------*/
