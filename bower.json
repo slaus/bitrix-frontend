@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "jquery": "latest",
-    "bootstrap-sass": "latest",
+    "bootstrap": "v4.0.0-beta",
     "font-awesome": "latest",
     "html5shiv": "latest",
     "respond": "latest"
