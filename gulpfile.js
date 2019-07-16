@@ -16,8 +16,8 @@ var gulp        = require('gulp'),
     svgmin      = require('gulp-svgmin'),       // оптимизируем наш svg
     svg2png     = require('gulp-svg2png'),      // Создадим альтернативный спрайт из svg в png
     spritesmith = require('gulp.spritesmith'),  // Создание png спрайтов
-	concatJs    = require('gulp-concat'),       // Конкатенация JS
-	concatCss   = require('gulp-concat-css');   // Конкатенация CSS
+    concatJs    = require('gulp-concat'),       // Конкатенация JS
+    concatCss   = require('gulp-concat-css');   // Конкатенация CSS
 	
 
 
