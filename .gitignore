@@ -1,3 +1,5 @@
+node_modules/
+bower_components/
 bitrix/backup/
 bitrix/cache/
 bitrix/managed_cache/
